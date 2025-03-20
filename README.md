@@ -1,10 +1,33 @@
 # PlotFinder
 
-The objective of this study is to segment plots in othromosaics using deep learning models and probably generate a shape files, that could be used in other GIS applications.
+**PlotFinder** is a tool designed to segment agricultural plots in orthomosaic images using deep learning models. The goal is to accurately identify individual plots and generate shapefiles or polygon data that can be used in GIS applications for further analysis.
 
-Workflow
-- open rasters with geomatics information
-- train deep learning models for plot identification
-- establish a technique to slice the images and process through DL and put them togeather again
-- get the masks and extract geomatic info on those
-- convert masks to shapefile or polygons for GIS application
+## Objectives
+- Segment plots in orthomosaics using deep learning.
+- Generate shapefiles or polygon data for integration with GIS tools.
+
+## Workflow
+1. **Raster Handling**
+   - Load and visualize orthomosaic rasters with embedded geospatial metadata.
+
+2. **Model Training**
+   - Train deep learning models for plot segmentation and identification.
+
+3. **Image Slicing & Processing**
+   - Develop a method to slice large orthomosaic images.
+   - Process sliced images through the trained deep learning model.
+   - Stitch the segmented slices back into a unified output.
+
+4. **Mask Generation**
+   - Generate binary or multi-class masks for segmented plots.
+   - Extract geospatial information from the masks.
+
+5. **Shapefile Conversion**
+   - Convert segmentation masks into shapefiles or polygon formats.
+   - Enable downstream analysis in GIS platforms.
+
+## Future Enhancements
+- Optimize model inference speed for large-scale datasets.
+- Add support for multiple plot shapes and sizes.
+- Develop a GUI or web-based interface for easier use.
+
