@@ -1,5 +1,7 @@
 # PlotFinder
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
+
 **PlotFinder** is a tool designed to segment agricultural plots in orthomosaic images using deep learning models. The goal is to accurately identify individual plots and generate shapefiles or polygon data that can be used in GIS applications for further analysis.
 
 ## Objectives
